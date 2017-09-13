@@ -1,0 +1,16 @@
+<div class="col-sm-4">
+  <input type="text" class="form-control" [(ngModel)]="username">
+</div>
+<div class="col-sm-8 clearfix"></div>
+
+<div class="col-sm-12">
+  This is a story<br>
+  All about how<br>
+  {{ username ? username : "No-one" }}'s life got flip-turned<br>
+  Upside down<br>
+</div>
+
+<div class="col-sm-12">
+  <button class="btn btn-primary"
+          [disabled]="!username"
+          (click)="onClearUsername()">Clear Name</button>
